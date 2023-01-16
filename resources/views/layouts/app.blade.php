@@ -15,6 +15,10 @@
         @include('layouts.header')
     @endauth
 
+    @guest
+        @include('layouts.navbar')
+    @endguest
+
     <div class="container my-5">
         @yield('content')
     </div>
